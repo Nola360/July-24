@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* { 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+body {
+  background: rgb(75, 235, 247);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form_container {
+ width: 500px;
+ display: flex;
+ /* background: green; */
+ flex-direction: column;
+ justify-content: center;
+ padding: 20px;
+}
+
+.password_field {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: 0;
+  font-size: 22px;
+}
+
+::placeholder {
+  color: silver; 
+}
+
+.input_container {
+  display: flex;
+  padding: 8px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.toggle_password {
+  display: flex;
+  cursor: pointer;
+}
+
+.toggle_password i {
+  padding: 3px;
+}
+
+.toggle_password .fas.fa-eye-slash {
+  display: none;
+}
+
+.toggle_password .fas.fa-eye-slash.active {
+  display: flex;
+}
+
+.toggle_password .fas.fa-eye.active {
+  display: none;
+}
+
+.validation {
+  position: relative;
+  background: white;
+  border-radius: 3px;
+  color: silver;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: height .6s, opacity .5s ease-in-out;
+}
+
+.validation > div {
+  display: flex;
+ align-items: center;
+  margin: 15px;
+}
+
+.validation p {
+  font-size: 15px;
+}
+
+.validation i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  background: silver;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.validation.active {
+ opacity: 1;
+ overflow: none;
+ height: 165px;
+  
+}
+
+.policy_length p.ative {
+    color: rgb(33, 211, 33);
+}
